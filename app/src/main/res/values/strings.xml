@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">SklepApplication</string>
+    <string name="select_product">Wybierz produkt</string>
+    <string-array name="products_array">
+        <item>Komputer</item>
+        <item>Klawiatura</item>
+        <item>Myszka</item>
+        <item>Kamera/Monitor</item>
+    </string-array>
+
+    <!-- Teksty dla przycisku -->
+    <string name="place_order">Złóż zamówienie</string>
+
+    <!-- Hinty dla EditText -->
+    <string name="enter_price">Cena</string>
+    <string name="enter_customer_name">Imię i nazwisko/Firma</string>
+
+    <!-- Komunikaty Toast -->
+    <string name="price_required">Wprowadź cenę</string>
+
+</resources>

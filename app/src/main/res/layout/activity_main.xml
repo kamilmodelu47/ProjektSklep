@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#F2F2F2">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Toolbar -->
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            app:titleTextColor="#000000"
+            android:elevation="4dp"
+            android:layout_alignParentTop="true" />
+
+        <!-- Nagłówek -->
+        <TextView
+            android:id="@+id/dane"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Wpisz dane:"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:layout_below="@id/toolbar"
+            android:layout_marginTop="16dp"/>
+
+        <!-- Pole tekstowe Imię i nazwisko/Firma -->
+        <EditText
+            android:id="@+id/edit_text_customer_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Imię i nazwisko/Firma"
+            android:layout_below="@id/dane"
+            android:layout_marginTop="8dp"
+            android:textColorHint="#6C6161"
+            android:textColor="#000000"
+            android:background="#FFFFFF"
+            android:padding="12dp"/>
+
+        <!-- Real Madrid -->
+        <CheckBox
+            android:id="@+id/realmadryt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Koszulka Real Madryt"
+            android:textColor="#000000"
+            android:layout_below="@id/edit_text_customer_name"
+            android:layout_marginTop="16dp"/>
+        <ImageView
+            android:id="@+id/real"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/real"
+            android:layout_below="@id/realmadryt"
+            android:layout_marginTop="8dp" />
+        <TextView
+            android:id="@+id/cena1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="350 zł"
+            android:textColor="#000000"
+            android:layout_below="@id/opis1"
+            android:layout_marginTop="8dp"
+            android:layout_toRightOf="@id/real"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:id="@+id/opis1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Opis: Koszulka meczowa Realu Madryt 23/24. Dostępne nazwiska na koszulce: VINI JR., BELLINGHAM, RODRYGO."
+            android:textColor="#000000"
+            android:layout_below="@id/realmadryt"
+            android:layout_toRightOf="@id/real"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="8dp"/>
+
+        <!-- Borussia Dortmund -->
+        <CheckBox
+            android:id="@+id/borussiadort"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Koszulka Borussia Dortmund"
+            android:textColor="#FFD700"
+            android:layout_below="@id/real"
+            android:layout_marginTop="16dp"/>
+        <ImageView
+            android:id="@+id/borussia"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/borussia"
+            android:layout_below="@id/borussiadort"
+            android:layout_marginTop="8dp"/>
+        <TextView
+            android:id="@+id/cena2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="280 zł"
+            android:textColor="#FFD700"
+            android:layout_below="@id/opis2"
+            android:layout_marginTop="8dp"
+            android:layout_toRightOf="@id/borussia"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:id="@+id/opis2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Opis: Koszulka meczowa Borussia Dortmund 23/24. Dostępne nazwiska na koszulce: HALLER, SANCHO, REUS."
+            android:textColor="#FFD700"
+            android:layout_below="@id/borussiadort"
+            android:layout_toRightOf="@id/borussia"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="8dp"/>
+
+        <!-- AC Milan -->
+        <CheckBox
+            android:id="@+id/acmilan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Koszulka AC Milan"
+            android:textColor="#FF0000"
+            android:layout_below="@id/borussia"
+            android:layout_marginTop="16dp"/>
+        <ImageView
+            android:id="@+id/milan"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/milan"
+            android:layout_below="@id/acmilan"
+            android:layout_marginTop="8dp"/>
+        <TextView
+            android:id="@+id/cena3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="250 zł"
+            android:textColor="#FF0000"
+            android:layout_below="@id/opis3"
+            android:layout_marginTop="8dp"
+            android:layout_toRightOf="@id/milan"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:id="@+id/opis3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Opis: Koszulka meczowa AC Milan 23/24. Dostępne nazwiska na koszulce: LEAO, GIROUD, PULISIC."
+            android:textColor="#FF0000"
+            android:layout_below="@id/acmilan"
+            android:layout_toRightOf="@id/milan"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="8dp"/>
+
+        <!-- KS Pomorzanin Toruń -->
+        <CheckBox
+            android:id="@+id/pomorzanin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Koszulka KS Pomorzanin Toruń"
+            android:textColor="#0000FF"
+            android:layout_below="@id/milan"
+            android:layout_marginTop="16dp"/>
+        <ImageView
+            android:id="@+id/pomorek"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/pomorek"
+            android:layout_below="@id/pomorzanin"
+            android:layout_marginTop="8dp"/>
+        <TextView
+            android:id="@+id/cena4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="300 zł"
+            android:textColor="#0000FF"
+            android:layout_below="@id/opis4"
+            android:layout_marginTop="8dp"
+            android:layout_toRightOf="@id/pomorek"
+            android:layout_marginLeft="10dp" />
+
+        <TextView
+            android:id="@+id/opis4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Opis: Koszulka meczowa KS Pomorzanin Toruń 23/24. Dostępne nazwiska na koszulce: PACZKOWSKI, OSIŃSKI, CENTKOWSKI."
+            android:textColor="#0000FF"
+            android:layout_below="@id/pomorzanin"
+            android:layout_toRightOf="@id/pomorek"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="8dp"/>
+
+        <!-- Cena -->
+        <TextView
+            android:id="@+id/text_view_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cena:"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:layout_below="@id/pomorek"
+            android:layout_marginTop="16dp"/>
+
+        <Button
+            android:id="@+id/button_place_order"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Złóż zamówienie"
+            android:textColor="#FFFFFF"
+            android:background="#000000"
+            android:layout_below="@id/text_view_price"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="4dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"/>
+
+        <Button
+            android:id="@+id/button_calculate_price"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Oblicz cenę zamówienia"
+            android:textColor="#FFFFFF"
+            android:background="#000000"
+            android:layout_below="@id/text_view_price"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="4dp"
+            android:layout_toEndOf="@id/button_place_order"
+            android:layout_centerVertical="true"/>
+
+
+    </RelativeLayout>
+</ScrollView>
+

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    android:background="#FFFFFF">
+
+    <!-- App Name -->
+    <TextView
+        android:id="@+id/app_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sklep Kocia Łapka"
+        android:textSize="28sp"
+        android:textColor="#000000"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="32dp"/>
+
+    <!-- Logo -->
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/logo"
+        android:layout_below="@id/app_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="32dp"/>
+
+    <!-- Username -->
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logo"
+        android:layout_marginTop="24dp"
+        android:hint="Username"
+        android:padding="12dp"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:background="#F0F0F0"/>
+
+    <!-- Password -->
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/username"
+        android:layout_marginTop="16dp"
+        android:hint="Password"
+        android:padding="12dp"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:background="#F0F0F0"
+        android:inputType="textPassword"/>
+
+    <!-- Log In Button -->
+    <Button
+        android:id="@+id/log_in_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/password"
+        android:layout_marginTop="32dp"
+        android:text="Log In"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:background="#FF5722"/>
+
+    <!-- Sign Up Text -->
+    <TextView
+        android:id="@+id/dont_have_acc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/log_in_btn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:text="Don't have an account? Sign Up"
+        android:textColor="#000000"
+        android:textSize="14sp"/>
+
+</RelativeLayout>
